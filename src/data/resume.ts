@@ -31,7 +31,6 @@ export const RESUME_DATA = {
       { name: "Bootstrap", icon: Layout },
       { name: "JavaScript / TypeScript", icon: Code },
       { name: "React", icon: Code },
-      { name: "Vue.js", icon: Code },
       { name: "Next.js", icon: Code },
     ],
     backend: [
