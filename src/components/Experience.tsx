@@ -6,7 +6,7 @@ import { Briefcase } from "lucide-react";
 
 export function Experience() {
   return (
-    <section id="experience" className="pt-16 pb-[35px] md:pb-16 px-4 sm:px-6 lg:px-8 relative">
+    <section id="experience" className="pt-16 pb-8 md:pb-16 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ export function Experience() {
           </p>
         </motion.div>
 
-        <div className="relative md:border-l md:border-card-border ml-0 md:ml-6 space-y-12 pb-12">
+        <div className="relative md:border-l md:border-card-border ml-0 md:ml-6 space-y-12 pb-0 md:pb-12">
           {RESUME_DATA.experience.map((exp, index) => (
             <motion.div
               key={index}
@@ -49,7 +49,7 @@ export function Experience() {
                       {exp.company}
                     </p>
                   </div>
-                  <span className="inline-flex flex-col items-start md:flex-row md:items-center py-1 px-3 rounded-full bg-card-border text-foreground/70 text-sm font-medium md:whitespace-nowrap h-fit text-left">
+                  <span className="inline-flex flex-col items-start md:flex-row md:items-center py-1 px-3 rounded-full bg-card-border text-foreground/70 text-sm font-medium md:whitespace-nowrap h-fit text-left w-fit">
                     {exp.date.split(', ').map((d, i, arr) => (
                       <span key={i} className="block md:inline">
                         {d}{i < arr.length - 1 ? <span className="hidden md:inline">,</span> : ""}

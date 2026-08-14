@@ -7,7 +7,7 @@ import Tilt from "react-parallax-tilt";
 
 export function Projects() {
   return (
-    <section id="projects" className="pt-16 pb-[35px] md:pb-16 px-4 sm:px-6 lg:px-8 relative">
+    <section id="projects" className="pt-8 md:pt-16 pb-[35px] md:pb-16 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,11 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="h-full"
+              className={`h-full ${
+                RESUME_DATA.projects.length % 2 !== 0 && index === RESUME_DATA.projects.length - 1
+                  ? "md:col-span-2"
+                  : ""
+              }`}
             >
               <Tilt
                 tiltMaxAngleX={5}

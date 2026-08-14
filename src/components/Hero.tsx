@@ -64,7 +64,12 @@ export function Hero() {
           </div>
 
           <p className="text-[15px] sm:text-[17px] text-foreground/60 leading-relaxed max-w-xl text-center lg:text-left">
-            {RESUME_DATA.personal.bio}
+            {RESUME_DATA.personal.bio.split(/AI\s+Hackathon/).map((part, i, arr) => (
+              <span key={i}>
+                {part}
+                {i < arr.length - 1 && <span className="whitespace-nowrap">AI Hackathon</span>}
+              </span>
+            ))}
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 mt-4 w-full">

@@ -13,7 +13,7 @@ export const RESUME_DATA = {
   personal: {
     name: "Aleksandra Gromek",
     title: "Web Developer",
-    bio: "Web Developer with 4+ years of experience. I specialize in building high-converting landing pages and advanced email development, including personalization and custom SAREscript integrations. Winner of an internal AI Hackathon.",
+    bio: "Web Developer with 4+ years of experience. I specialize in building high‑converting landing pages and advanced email development, including personalization and custom SAREscript integrations. Winner of an internal AI Hackathon.",
     email: "web.agromek@gmail.com",
     phone: "512 060 076",
     location: "Żyrardów / Remote",
@@ -31,22 +31,22 @@ export const RESUME_DATA = {
       { name: "Bootstrap", icon: Layout },
       { name: "JavaScript / TypeScript", icon: Code },
       { name: "React", icon: Code },
+      { name: "Vue.js", icon: Code },
       { name: "Next.js", icon: Code },
     ],
     backend: [
-      { name: "PHP", icon: Server },
       { name: "Node.js", icon: Server },
+      { name: "PHP", icon: Server },
       { name: "PostgreSQL", icon: Database },
     ],
     tools: [
       { name: "Git", icon: Code },
-      { name: "GitLab", icon: Code },
       { name: "Docker", icon: Server },
-      { name: "WordPress", icon: Globe },
       { name: "Figma", icon: PenTool },
       { name: "Photoshop", icon: PenTool },
       { name: "Cursor", icon: Sparkles },
       { name: "Antigravity", icon: Sparkles },
+      { name: "WordPress", icon: Globe },
     ],
   },
   experience: [
@@ -60,11 +60,11 @@ export const RESUME_DATA = {
         "Develop custom email personalization and logic scripts using SAREscript.",
         "Conduct internal training sessions on email coding best practices for the team.",
         "Analyze technical requirements and mailings to deliver optimal solutions for clients.",
-        "Code XML surveys and maintain GitLab repositories for version control.",
+        "Code XML surveys and maintain Git repositories for version control.",
         "Participant – Internal AI Hackathon: Awarded first place in the Open Category for developing an AI-powered solution addressing a business challenge.",
       ],
       stats: ["500+ Email Templates", "10+ Landing Pages"],
-      tags: ["HTML5", "CSS", "JavaScript", "PHP", "Tailwind", "Next.js", "Docker", "GitLab"],
+      tags: ["HTML5", "CSS", "JavaScript", "PHP", "Tailwind", "Next.js", "Docker", "Git"],
     },
     {
       company: "DIGITREE GROUP S.A.",
@@ -106,6 +106,13 @@ export const RESUME_DATA = {
     },
   ],
   projects: [
+    {
+      title: "Personal Portfolio",
+      description: "My personal developer portfolio built to showcase my projects, skills, and experience. Features a modern, responsive design with smooth animations.",
+      tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
+      demoUrl: "https://portfolio-three-eta-bpey73g8v1.vercel.app/",
+      githubUrl: "https://github.com/NymfaWeb/Portfolio",
+    },
     {
       title: "Signature Creator",
       description: "Built a web app to automate the creation of standardized, brand-consistent email signatures with a real-time live preview.",
