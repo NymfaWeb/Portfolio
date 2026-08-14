@@ -1,11 +1,11 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { Download, GitBranch, Briefcase, Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 import { useState } from "react";
 import { RESUME_DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
-import { MagneticButton } from "./ui/MagneticButton";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -50,34 +50,34 @@ export function Navbar() {
           </ul>
           <div className="h-4 w-px bg-card-border" />
           <div className="flex items-center gap-4">
-            <MagneticButton>
-              <a
-                href={RESUME_DATA.personal.github}
-                target="_blank"
-                rel="noreferrer"
-                className="text-foreground/80 hover:text-emerald-400 transition-colors flex p-2 -m-2"
-              >
-                <GitBranch className="w-5 h-5" />
-              </a>
-            </MagneticButton>
-            <MagneticButton>
-              <a
-                href={RESUME_DATA.personal.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="text-foreground/80 hover:text-emerald-400 transition-colors flex p-2 -m-2"
-              >
-                <Briefcase className="w-5 h-5" />
-              </a>
-            </MagneticButton>
+            <a
+              href={RESUME_DATA.personal.github}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub Profile"
+              className="text-foreground/80 hover:text-emerald-400 transition-colors flex p-2 -m-2"
+            >
+              <GithubIcon className="w-5 h-5" aria-hidden="true" />
+            </a>
+            <a
+              href={RESUME_DATA.personal.linkedin}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn Profile"
+              className="text-foreground/80 hover:text-emerald-400 transition-colors flex p-2 -m-2"
+            >
+              <LinkedinIcon className="w-5 h-5" aria-hidden="true" />
+            </a>
           </div>
         </div>
 
         <button
           className="md:hidden text-foreground/80 hover:text-emerald-400 transition-colors"
           onClick={toggleMenu}
+          aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
+          aria-expanded={isOpen}
         >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
         </button>
       </nav>
 
@@ -104,26 +104,24 @@ export function Navbar() {
           </ul>
           <div className="h-px w-full bg-card-border" />
           <div className="flex items-center gap-4">
-            <MagneticButton>
-              <a
-                href={RESUME_DATA.personal.github}
-                target="_blank"
-                rel="noreferrer"
-                className="text-foreground/80 hover:text-emerald-400 transition-colors flex p-2 -m-2"
-              >
-                <GitBranch className="w-5 h-5" />
-              </a>
-            </MagneticButton>
-            <MagneticButton>
-              <a
-                href={RESUME_DATA.personal.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="text-foreground/80 hover:text-emerald-400 transition-colors flex p-2 -m-2"
-              >
-                <Briefcase className="w-5 h-5" />
-              </a>
-            </MagneticButton>
+            <a
+              href={RESUME_DATA.personal.github}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub Profile"
+              className="text-foreground/80 hover:text-emerald-400 transition-colors flex p-2 -m-2"
+            >
+              <GithubIcon className="w-5 h-5" aria-hidden="true" />
+            </a>
+            <a
+              href={RESUME_DATA.personal.linkedin}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn Profile"
+              className="text-foreground/80 hover:text-emerald-400 transition-colors flex p-2 -m-2"
+            >
+              <LinkedinIcon className="w-5 h-5" aria-hidden="true" />
+            </a>
           </div>
         </motion.div>
       )}

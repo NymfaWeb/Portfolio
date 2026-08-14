@@ -74,19 +74,21 @@ export function Projects() {
                   <a
                     href={project.demoUrl}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                     className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-emerald-400 transition-colors"
+                    aria-label={`Live Demo of ${project.title}`}
                   >
-                    <ExternalLink className="w-4 h-4" />
+                    <ExternalLink className="w-4 h-4" aria-hidden="true" />
                     Live Demo
                   </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                     className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-emerald-400 transition-colors"
+                    aria-label={`GitHub Repository of ${project.title}`}
                   >
-                    <GitBranch className="w-4 h-4" />
+                    <GitBranch className="w-4 h-4" aria-hidden="true" />
                     Repository
                   </a>
                 </div>

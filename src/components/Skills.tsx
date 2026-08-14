@@ -43,7 +43,7 @@ function SkillCategory({
             whileTap={{ scale: 0.95 }}
             className="glass glass-hover flex items-center gap-2 px-4 py-2 rounded-xl cursor-default"
           >
-            <skill.icon className="w-4 h-4 text-emerald-400" />
+            <skill.icon className="w-4 h-4 text-emerald-400" aria-hidden="true" />
             <span className="text-sm font-medium text-foreground/80">
               {skill.name}
             </span>

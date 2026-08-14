@@ -34,7 +34,7 @@ export function Contact() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="glass glass-hover pt-8 px-8 pb-2.5 rounded-2xl flex flex-col items-center text-center gap-4 group h-full"
           >
-            <div className="w-12 h-12 rounded-full bg-primary-900/50 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 rounded-full bg-primary-900/50 flex items-center justify-center group-hover:scale-110 transition-transform" aria-hidden="true">
               <Mail className="w-6 h-6 text-emerald-400" />
             </div>
             
@@ -81,14 +81,15 @@ export function Contact() {
           <motion.a
             href={RESUME_DATA.personal.linkedin}
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
+            aria-label="Visit my LinkedIn profile"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="glass glass-hover pt-8 px-8 pb-2.5 rounded-2xl flex flex-col items-center text-center gap-4 group h-full"
           >
-            <div className="w-12 h-12 rounded-full bg-primary-900/50 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 rounded-full bg-primary-900/50 flex items-center justify-center group-hover:scale-110 transition-transform" aria-hidden="true">
               <Briefcase className="w-6 h-6 text-emerald-400" />
             </div>
             <div className="min-h-[84px] flex flex-col items-center justify-start w-full">
@@ -104,7 +105,7 @@ export function Contact() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="glass pt-8 px-8 pb-2.5 rounded-2xl flex flex-col items-center text-center gap-4 h-full"
           >
-            <div className="w-12 h-12 rounded-full bg-primary-900/50 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full bg-primary-900/50 flex items-center justify-center" aria-hidden="true">
               <MapPin className="w-6 h-6 text-emerald-400" />
             </div>
             <div className="min-h-[84px] flex flex-col items-center justify-start w-full">

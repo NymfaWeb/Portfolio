@@ -33,7 +33,7 @@ export function Experience() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative pl-0 md:pl-12"
             >
-              <div className="hidden md:flex absolute left-[-17px] top-1 w-8 h-8 rounded-full bg-primary-900 border-4 border-background items-center justify-center">
+              <div className="hidden md:flex absolute left-[-17px] top-1 w-8 h-8 rounded-full bg-primary-900 border-4 border-background items-center justify-center" aria-hidden="true">
                 <Briefcase className="w-3 h-3 text-emerald-400" />
               </div>
 

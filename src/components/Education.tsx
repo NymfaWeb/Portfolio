@@ -30,7 +30,7 @@ export function Education() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="glass p-8 rounded-2xl w-full max-w-2xl relative group hover:border-emerald-500/30 transition-all duration-300"
             >
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-primary-900 rounded-full border-4 border-background flex items-center justify-center">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-primary-900 rounded-full border-4 border-background flex items-center justify-center" aria-hidden="true">
                 <GraduationCap className="w-5 h-5 text-emerald-400" />
               </div>
               <div className="mt-4">

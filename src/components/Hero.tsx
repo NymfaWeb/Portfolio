@@ -64,28 +64,25 @@ export function Hero() {
           </div>
 
           <p className="text-[15px] sm:text-[17px] text-foreground/60 leading-relaxed max-w-xl text-center lg:text-left">
-            {RESUME_DATA.personal.bio.split(/AI\s+Hackathon/).map((part, i, arr) => (
-              <span key={i}>
-                {part}
-                {i < arr.length - 1 && <span className="whitespace-nowrap">AI Hackathon</span>}
-              </span>
-            ))}
+            {RESUME_DATA.personal.bio}
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 mt-4 w-full">
             <a
               href="#contact"
               className="flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white font-medium rounded-full transition-colors"
+              aria-label="Contact Me via Email"
             >
-              <Mail className="w-5 h-5" />
+              <Mail className="w-5 h-5" aria-hidden="true" />
               Contact Me
             </a>
             <a
               href="#projects"
               className="flex items-center gap-2 px-6 py-3 bg-card-border hover:bg-card-border/80 text-foreground font-medium rounded-full transition-all border border-transparent hover:border-blue-500 hover:text-blue-500"
+              aria-label="View My Projects"
             >
               View Projects
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </a>
           </div>
         </motion.div>
