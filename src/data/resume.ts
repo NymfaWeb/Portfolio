@@ -13,7 +13,7 @@ export const RESUME_DATA = {
   personal: {
     name: "Aleksandra Gromek",
     title: "Web Developer",
-    bio: "Web Developer with 4+ years of experience. I specialize in building high-converting landing pages (Next.js/React) and advanced email development, including personalization and custom SAREscript integrations. Winner of an internal AI Hackathon.",
+    bio: "Web Developer with 4+ years of experience. I specialize in building high-converting landing pages and advanced email development, including personalization and custom SAREscript integrations. Winner of an internal AI Hackathon.",
     email: "web.agromek@gmail.com",
     phone: "512 060 076",
     location: "Żyrardów / Remote",
