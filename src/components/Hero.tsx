@@ -96,7 +96,7 @@ export function Hero() {
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-emerald-400/30 to-primary-600/30 blur-2xl animate-pulse" />
           <div className="relative w-full h-full rounded-full border-2 border-card-border p-2 glass overflow-hidden flex items-center justify-center">
             <div className="w-full h-full rounded-full bg-card-border/50 flex items-center justify-center overflow-hidden relative">
-              <Image src="/avatar.png" alt="Profile Picture" fill className="object-cover" quality={100} priority />
+              <Image src="/avatar_2.0.png" alt="Profile Picture" fill className="object-cover" quality={100} priority />
             </div>
           </div>
         </motion.div>

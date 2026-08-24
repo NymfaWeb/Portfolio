@@ -40,6 +40,7 @@ export const RESUME_DATA = {
     ],
     tools: [
       { name: "Git", icon: Code },
+      { name: "Sentry", icon: Code },
       { name: "Docker", icon: Server },
       { name: "Figma", icon: PenTool },
       { name: "Photoshop", icon: PenTool },
