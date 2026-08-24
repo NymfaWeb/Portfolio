@@ -75,7 +75,7 @@ export const RESUME_DATA = {
         "Participated in Agile workflows, consistently monitoring performance and reporting progress.",
         "Developed robust, responsive web elements and supported the core development team.",
       ],
-      tags: ["HTML", "CSS", "JavaScript", "PHP"],
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "Git"],
     },
     {
       company: "DIGITREE GROUP S.A.",
