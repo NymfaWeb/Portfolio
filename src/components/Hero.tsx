@@ -78,7 +78,7 @@ export function Hero() {
             </a>
             <a
               href="#projects"
-              className="flex items-center gap-2 px-6 py-3 bg-card-border hover:bg-card-border/80 text-foreground font-medium rounded-full transition-all border border-transparent hover:border-blue-500 hover:text-blue-500"
+              className="flex items-center gap-2 px-6 py-3 bg-card-border hover:bg-card-border/80 text-foreground font-medium rounded-full transition-all border border-transparent hover:border-current hover:text-current"
               aria-label="View My Projects"
             >
               View Projects
