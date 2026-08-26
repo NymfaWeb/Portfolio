@@ -124,8 +124,8 @@ export const RESUME_DATA = {
       title: "Expense management system",
       description: "A web-based application for tracking personal and/or business expenses, allowing users to add, categorize, and analyze spending. The system provides an intuitive dashboard with filtering, monthly summaries, and visual insights to help users manage their finances more effectively.",
       tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Docker"],
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://expense-tracker-web-lyart-five.vercel.app/",
+      githubUrl: "https://github.com/NymfaWeb/expense_tracker",
     },
   ],
 };
