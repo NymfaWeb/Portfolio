@@ -97,6 +97,28 @@ export const RESUME_DATA = {
       ],
       tags: ["HTML", "CSS"],
     },
+    {
+      company: "J&J TaxHouse Sp. z o.o.",
+      title: "Technical Help Desk",
+      date: "01.2019 - 02.2021",
+      description: [
+        "Installing and configuring software",
+        "Creating accounting schemas in RaksSQL software",
+        "Resolving technical issues",
+      ],
+      tags: ["IT Support", "RaksSQL"],
+    },
+    {
+      company: "J&J TaxHouse Sp. z o.o.",
+      title: "Accountant",
+      date: "09.2016 - 12.2018",
+      description: [
+        "Managing documentation across multiple industries",
+        "Maintaining contact with clients",
+        "Ensuring punctuality",
+      ],
+      tags: ["Accounting", "Client Relations"],
+    },
   ],
   education: [
     {
