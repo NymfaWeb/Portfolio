@@ -32,7 +32,7 @@ export function Navbar() {
           href="#"
           className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-primary-500"
         >
-          {RESUME_DATA.personal.name.split(" ")[0]}
+          NymfaWeb
         </a>
 
         <div className="hidden md:flex items-center gap-6">
